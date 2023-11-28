@@ -3,61 +3,64 @@
  ********************/
 function moreThan5(num){
 return num > 5
+
+// let greaterThan5 = num >5
+// return greaterThan5
 }
 
 // function isNewTopScore(score, topscore){
 //   return score >=15 && topscore <=18
 // } this passed but correct syntax below
-function isNewTopScore(score, topscore){
-  return score > topscore
+function isNewTopScore(score, topScore){
+  return score > topScore
 }
 
-function isInDanger(gradeD){
-  return gradeD >=60 && gradeD <=71
+function isInDanger(grade){
+  return grade >=60 && grade <=71
 }
 
-function isCoasting(gradeC){
-  return gradeC >=72 && gradeC <=83
+function isCoasting(grade){
+  return grade >=72 && grade <=83
 }
 
-function isSucceeding(gradeB){
-  return gradeB >=84 && gradeB <=92
+function isSucceeding(grade){
+  return grade >=84 && grade <=92
 }
 
-function isFailing(gradeF){
-  return gradeF < 60  
+function isFailing(grade){
+  return grade < 60  
 }
 
-function isAcing(gradeA){
-  return gradeA > 92
+function isAcing(grade){
+  return grade > 92
 }
 
-function isStudent(role1){
-  return role1 === "student"
+function isStudent(role){
+  return role === "student"
 }
 
-function isTeacher(role2){
-  return role2 === "teacher"
+function isTeacher(role){
+  return role === "teacher"
 }
 
-function isAdmin(role3){
-  return role3 === "admin"
+function isAdmin(role){
+  return role === "admin"
 }
 
-function isElementary(schoolLevel){
-  return schoolLevel === "elementary"
+function isElementary(level){
+  return level === "elementary"
 }
 
 function areDifferentPeople(name1, name2){
   return name1 !== name2
 }
 
-function isMiddleSchoolTeacher(role, schoolLevel){
-  return (role === "teacher") && (schoolLevel >= 6 && schoolLevel <= 8)
+function isMiddleSchoolTeacher(role, level){
+  return (role === "teacher") && (level >= 6 && level <= 8)
 }
 
-function notAnElementarySchoolAdministrator(schoolLevel, role){
-  return (schoolLevel !== "elementary") || (role !== "admin") 
+function notAnElementarySchoolAdministrator(level, role){
+  return (level !== "elementary") || (role !== "admin") 
 }
 
 
